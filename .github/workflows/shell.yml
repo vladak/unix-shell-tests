@@ -27,6 +27,6 @@ jobs:
       - name: Compile
         run: echo gcc mysh.c
       - name: Create test configuration
-        run: echo foo
+        run: cp this/test-config.local labs/final-assignment-tests/shell
       - name: Run the tests
         run: cd final-assignment-tests/shell && ./run-tests.sh
