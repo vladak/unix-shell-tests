@@ -1,0 +1,2 @@
+export MYSH="/tmp/mysh"
+export STEF="/home/runner/work/unix-shell-tests/unix-shell-tests/stef/stef.sh"
