@@ -8,7 +8,7 @@ on:
 jobs:
   checks:
     name: Shell checks
-    runs-on: ubuntu-latest
+    runs-on: [ubuntu-latest, macos-latest]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -25,4 +25,4 @@ jobs:
       - name: Create test configuration
         run: echo foo
       - name: Run the tests
-        run: pwd
+        run: cd final-assignment-tests/shell && ./run-tests.sh
