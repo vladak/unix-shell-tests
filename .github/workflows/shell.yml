@@ -13,6 +13,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
+          path: this
+      - name: Checkout labs
+        uses: actions/checkout@v3
+        with:
           repository: 'devnull-cz/unix-linux-prog-in-c-labs'
           path: 'labs'
       - name: Checkout STEF
