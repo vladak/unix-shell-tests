@@ -25,7 +25,7 @@ jobs:
           repository: 'devnull-cz/stef'
           path: 'stef'
       - name: Compile
-        run: echo gcc mysh.c
+        run: cd this && make && cp mysh /tmp
       - name: Create test configuration
         run: cp this/test-config.local labs/final-assignment-tests/shell
       - name: Run the tests
