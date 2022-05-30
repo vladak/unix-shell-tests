@@ -1,0 +1,21 @@
+name: Run shell checks
+
+on:
+  push:
+    paths:
+      - .github/workflows/*.yml
+
+jobs:
+  checks:
+    name: Shell checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Checkout STEF
+        uses: actions/checkout@v3
+        with:
+          repository: 'devnull-cz/stef'
+          path: 'stef'
+      - name: Run
+        run: pwd
