@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          path: this
+          path: 'this'
       - name: Checkout labs
         uses: actions/checkout@v3
         with:
