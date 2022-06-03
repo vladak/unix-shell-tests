@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - .github/workflows/*.yml
+      - '**/*.c'
       - test-config.local
 
 jobs:
